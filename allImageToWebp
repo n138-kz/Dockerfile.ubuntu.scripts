@@ -37,6 +37,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
     find -name '*.JPG'  -exec rename 's/.JPG/.jpg/g'   {} \;
     find -name '*.PNG'  -exec rename 's/.PNG/.png/g'   {} \;
     find -name '*.GIF'  -exec rename 's/.GIF/.gif/g'   {} \;
+    find -name '*.MP4'  -exec rename 's/.MP4/.mp4/g'   {} \;
 
     for i in *.heic; do
         if [ ! -f "${i}" ] ;then
