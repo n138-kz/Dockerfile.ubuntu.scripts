@@ -28,7 +28,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
 
     find -name '*.AVIF' -exec rename 's/.AVIF/.avif/g' {} \;
     find -name '*.WEBP' -exec rename 's/.WEBP/.webp/g' {} \;
-    find -name '*.WEBP' -exec rename 's/.WEBM/.webm/g' {} \;
+    find -name '*.WEBM' -exec rename 's/.WEBM/.webm/g' {} \;
     find -name '*.HEIC' -exec rename 's/.HEIC/.heic/g' {} \;
     find -name '*.jpeg' -exec rename 's/.jpeg/.jpg/g'  {} \;
     find -name '*.jeif' -exec rename 's/.jeif/.jpg/g'  {} \;
