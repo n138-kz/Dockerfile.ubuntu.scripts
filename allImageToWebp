@@ -28,6 +28,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
 
     find -name '*.AVIF' -exec rename 's/.AVIF/.avif/g' {} \;
     find -name '*.WEBP' -exec rename 's/.WEBP/.webp/g' {} \;
+    find -name '*.WEBM' -exec rename 's/.WEBM/.webm/g' {} \;
     find -name '*.HEIC' -exec rename 's/.HEIC/.heic/g' {} \;
     find -name '*.jpeg' -exec rename 's/.jpeg/.jpg/g'  {} \;
     find -name '*.jeif' -exec rename 's/.jeif/.jpg/g'  {} \;
@@ -36,6 +37,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
     find -name '*.JPG'  -exec rename 's/.JPG/.jpg/g'   {} \;
     find -name '*.PNG'  -exec rename 's/.PNG/.png/g'   {} \;
     find -name '*.GIF'  -exec rename 's/.GIF/.gif/g'   {} \;
+    find -name '*.MP4'  -exec rename 's/.MP4/.mp4/g'   {} \;
 
     for i in *.heic; do
         if [ ! -f "${i}" ] ;then
