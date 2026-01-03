@@ -54,7 +54,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
         convert \
             "${i}" \
             "${i//.heic/.png}" && \
-            LC_ALL=C mv "${i}" _trash/;
+            mv "${i}" _trash/;
     done
 
     for i in *.png *.jpg G*; do
@@ -73,11 +73,11 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
         echo -n '\e[1;36m';
         echo -n ${i};
         echo '\e[m';
-        LC_ALL=C ffmpeg \
+        ffmpeg \
             -hide_banner \
             -i "${i}" \
             -y "${i%.*}.webp" && \
-            LC_ALL=C mv "${i}" _trash/;
+            mv "${i}" _trash/;
     done
 
     mv wget-log* _trash/
