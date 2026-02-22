@@ -66,6 +66,10 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
             echo '\e[1;33mFile has alredy exist: '${i}'\e[m';
             continue;
         fi
+        if [ ${i#${i%???}} = 'mp4' ];then
+                echo 'skip mp4'
+                continue
+        fi
         echo -n '\e[1;34m';
         echo -n $(dirname "$(pwd)")/;
         echo -n '\e[1;33m';
