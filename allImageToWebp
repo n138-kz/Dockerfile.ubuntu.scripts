@@ -67,7 +67,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
             continue;
         fi
         if [ ${i#${i%???}} = 'mp4' ];then
-                echo 'skip mp4'
+                echo '\e[1;33mmp4 file has skip: '${i}'\e[m';
                 continue
         fi
         echo -n '\e[1;34m';
