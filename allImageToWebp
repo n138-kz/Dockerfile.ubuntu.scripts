@@ -57,7 +57,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
             mv "${i}" _trash/;
     done
 
-    for i in *.png *.jpg G*; do
+    for i in *.png *.jpg F* G* H*; do
         if [ ! -f "${i}" ];then
             echo '\e[1;31mFile or Directory has not found: '${i}'\e[m';
             continue;
