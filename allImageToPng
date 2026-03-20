@@ -54,11 +54,11 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
         echo '\e[m';
         convert \
             "${i}" \
-            "${i//.heic/.png}" && \
+            "${i%.*}.png" && \
             mv "${i}" _trash/;
     done
 
-    for i in *.png *.jpg F* G* H*; do
+    for i in *.webp *.jpg; do
         if [ ! -f "${i}" ];then
             echo '\e[1;31mFile or Directory has not found: '${i}'\e[m';
             continue;
@@ -77,7 +77,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
         ffmpeg \
             -hide_banner \
             -i "${i}" \
-            -y "${i%.*}.webp" && \
+            -y "${i%.*}.png" && \
             mv "${i}" _trash/;
     done
 
