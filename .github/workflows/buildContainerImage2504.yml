@@ -8,3 +8,4 @@ permissions:
 jobs:
   build:
     uses: n138-kz/Dockerfile.ubuntu/.github/workflows/docker-image_ubuntu2504.yml@main
+    secrets: inherit
