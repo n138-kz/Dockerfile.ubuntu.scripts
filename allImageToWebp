@@ -54,7 +54,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
         echo '\e[m';
         convert \
             "${i}" \
-            "${i//.heic/.png}" && \
+            "${i%.*}.png" && \
             mv "${i}" _trash/;
     done
 
