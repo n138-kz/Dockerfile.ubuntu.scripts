@@ -1,0 +1,10 @@
+name: Docker Container for Ubuntu 22.04
+on:
+  workflow_dispatch:
+  push:
+permissions:
+  contents: read
+
+jobs:
+  build:
+    uses: n138-kz/Dockerfile.ubuntu/.github/workflows/docker-image_ubuntu2204.yml@main
