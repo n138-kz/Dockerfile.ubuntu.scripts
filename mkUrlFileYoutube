@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo '[InternetShortcut]' > file.url
-echo "URL=https://www.youtube.com/watch?v=vCBbeov8Ygs" >> file.url
+echo '[InternetShortcut]'
+echo "URL=https://www.youtube.com/watch?v=vCBbeov8Ygs"
