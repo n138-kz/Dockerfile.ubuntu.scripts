@@ -1,5 +1,5 @@
 #!/bin/sh
 
-videoId=''
+videoId="${1}"
 echo '[InternetShortcut]'
 echo "URL=https://www.youtube.com/watch?v=${videoId}"
