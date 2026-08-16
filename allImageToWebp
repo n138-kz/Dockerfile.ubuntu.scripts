@@ -52,7 +52,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
         echo -n '\e[1;36m';
         echo -n ${i};
         echo '\e[m';
-        convert \
+        heif-convert \
             "${i}" \
             "${i%.*}.png" && \
             mv "${i}" _trash/;
