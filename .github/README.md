@@ -1,7 +1,5 @@
 # [Dockerfile.ubuntu.scripts](https://github.com/n138-kz/Dockerfile.ubuntu.scripts)
 
-[![GitHub Extra Pins](https://github-readme-stats.vercel.app/api/pin/?locale=ja&show_owner=true&theme=graywhite&username=n138-kz&repo=Dockerfile.ubuntu.scripts)](https://github.com/n138-kz/Dockerfile.ubuntu.scripts)
-
 ## Repos Info
 
 <div align="center">
@@ -33,9 +31,6 @@
   [![](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/channel/UCOX8Iv1r0V18lbOnohE7lWQ)
   [![](https://img.shields.io/badge/Twitch-6441A5?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/yuukomiya)
   [![](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/n138kz)
-  <br>
-  [![](https://img.shields.io/youtube/channel/subscribers/UCOX8Iv1r0V18lbOnohE7lWQ)](https://youtube.com/channel/UCOX8Iv1r0V18lbOnohE7lWQ)
-  [![](https://img.shields.io/twitch/status/YuuKomiya)](https://www.twitch.tv/yuukomiya)
 
 </div>
 
