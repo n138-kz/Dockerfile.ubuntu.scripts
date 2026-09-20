@@ -39,6 +39,7 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
     find -name '*.GIF'  -exec rename 's/.GIF/.gif/g'   {} \;
     find -name '*.MP4'  -exec rename 's/.MP4/.mp4/g'   {} \;
     find -name '*.MKV'  -exec rename 's/.MKV/.mkv/g'   {} \;
+    find -name '*.MOV'  -exec rename 's/.MOV/.mov/g'   {} \;
 
     for i in *.webm ${*}; do
         if [ ! -f "${i}" ];then
