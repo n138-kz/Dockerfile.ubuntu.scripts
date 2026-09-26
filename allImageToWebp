@@ -22,6 +22,11 @@ else
     fi
 fi
 
+uid=1000
+gid=${uid}
+chown -R ${uid} ./
+chgrp -R ${gid} ./
+
 if [ $(jobs|wc -l) -eq 0 ] ; then
 
     rename -v 's/\?.*//g' *
@@ -89,8 +94,3 @@ if [ $(jobs|wc -l) -eq 0 ] ; then
     mv wget-log* _trash/
 
 fi
-
-uid=1000
-gid=${uid}
-chown -R ${uid} ./
-chgrp -R ${gid} ./
