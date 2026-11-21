@@ -1,0 +1,4 @@
+#!/bin/bash
+[ -d _trash ] || mkdir _trash;
+cat "${1}" | jq -c > /dev/null 2>&1 && jq -r .log.entries[].request.url "${1}" > "${1%.*}.txt";
+cat "${1}" | jq -c > /dev/null 2>&1 && mv "${1}" _trash/;
