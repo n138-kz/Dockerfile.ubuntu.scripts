@@ -1,0 +1,2 @@
+#!/bin/bash
+yt-dlp -U && yt-dlp -x -f bestaudio "${1}"
